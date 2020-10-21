@@ -19,7 +19,7 @@ The mean square error (MSE) served as an indicator for estimating model accuracy
 
 ## Dataset
 
-The [datasets](https://www.kaggle.com/netflix-inc/netflix-prize-data) of this project were released by Netflix in 2006. Some of them can be found in the [Data](./Data) folder. The original datasets used in this project are:
+The [datasets](https://www.kaggle.com/netflix-inc/netflix-prize-data) of this project were released by Netflix in 2006. Some of them can be found in the [Data](./Data) folder. The relevant datasets are:
 
 - [`combined_data_1`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
 - [`combined_data_2`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
