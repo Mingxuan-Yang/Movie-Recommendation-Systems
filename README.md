@@ -21,33 +21,33 @@ The mean square error (MSE) served as an indicator for estimating model accuracy
 
 The [datasets](https://www.kaggle.com/netflix-inc/netflix-prize-data) of this project were released by Netflix in 2006. Some of them can be found in the [Data](./Data) folder. The relevant datasets are:
 
-- [`combined_data_1`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
-- [`combined_data_2`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
-- [`combined_data_3`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
-- [`combined_data_4`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
-- [`movie_titles`](./Data/movie_titles.csv)
+- [`combined_data_1.txt`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
+- [`combined_data_2.txt`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
+- [`combined_data_3.txt`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
+- [`combined_data_4.txt`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
+- [`movie_titles.csv`](./Data/movie_titles.csv)
 
 Part of the data cannot be found in the [Data](./Data) folder due to the limitation of Github file size.
 
-Besides, to determine similar movies for Movie Clustering, besides `movie_titles`, a separate [Kaggle dataset](https://www.kaggle.com/danielgrijalvas/movies) was utilized that contained additional characteristics for each movie, such as release country, genre, director, etc. It is stored in the [Data](./Data) folder.
+Also, to determine similar movies for Movie Clustering, a separate [Kaggle dataset](https://www.kaggle.com/danielgrijalvas/movies) besides `movie_titles.csv` was utilized that contained additional characteristics for each movie, such as release country, genre, director, etc. It is called `movies.csv` and is saved in the [Data](./Data) folder.
 
-- [`movies`](./Data/movies.csv)
+- [`movies.csv`](./Data/movies.csv)
 
-The training dataset stored in files starting with `combined_data` contains over 100 million ratings from over 480,000 randomly-chosen, anonymous subscribers on nearly 18,000 movie titles. This dataset provides 4 key variables: *CustomerID*; *Rating*; *Date*; and *MovieID*.
+The training dataset stored in files starting with 'combined_data' contains over 100 million ratings from over 480,000 randomly-chosen, anonymous subscribers on nearly 18,000 movie titles. This dataset provides 4 key variables: *CustomerID*; *Rating*; *Date*; and *MovieID*.
 
 ## Files
 
-This project was done in Python with three jupyter notebooks.
+This project was carried out in Python with three jupyter notebooks.
 
-- [`Data_Cleaning`](./Data_Cleaning.ipynb)
-- [`Data_Manipulation`](./Data_Manipulation.ipynb)
-- [`Recommendation_Systems`](./Recommendation_Systems.ipynb)
+- [`Data_Cleaning.ipynb`](./Data_Cleaning.ipynb)
+- [`Data_Manipulation.ipynb`](./Data_Manipulation.ipynb)
+- [`Recommendation_Systems.ipynb`](./Recommendation_Systems.ipynb)
 
-`Data_Cleaning` is aimed to do some basic data cleaning and analyses to the training dataset. 
+`Data_Cleaning.ipynb` is aimed to do some basic data cleaning and analyses to the training dataset. 
 
-`Data_Manipulation` exists because due to the memory limitation of personal computers, some manipulations could not be conducted on such a large dataset. Thus, a subset of the matrix was used for this project. This jupyter notebook implements the process of matrix cutting and saving. Finally, it will save the matrix that contains 4,642 customers and 2,784 movies as [target.csv](./Data/target.csv).
+`Data_Manipulation.ipynb` exists because due to the memory limitation of personal computers, some manipulations could not be conducted on such a large dataset. Thus, a subset of the matrix was used for this project. This jupyter notebook implements the process of matrix cutting and saving. Finally, it will save the submatrix that contains 4,642 customers and 2,784 movies as [target.csv](./Data/target.csv).
 
-`Recommendation_Systems` will build the corresponding recommendation systems mentioned in the Introduction part.
+`Recommendation_Systems.ipynb` will build the corresponding recommendation systems mentioned in the [Introduction](https://github.com/Mingxuan-Yang/Movie-Recommendation-Systems#introduction) part.
 
 ## Results
 
