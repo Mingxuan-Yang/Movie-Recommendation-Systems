@@ -19,15 +19,17 @@ The mean square error (MSE) served as an indicator for estimating model accuracy
 
 ## Dataset
 
-The [datasets](https://www.kaggle.com/netflix-inc/netflix-prize-data) of this project were released by Netflix in 2006. They can be found in the [Data](./Data) folder with the following name:
+The [datasets](https://www.kaggle.com/netflix-inc/netflix-prize-data) of this project were released by Netflix in 2006. Some of them can be found in the [Data](./Data) folder. The original datasets used in this project are:
 
-- [`combined_data_1`](./Data/combined_data_1.txt)
-- [`combined_data_2`](./Data/combined_data_2.txt)
-- [`combined_data_3`](./Data/combined_data_3.txt)
-- [`combined_data_4`](./Data/combined_data_4.txt)
+- [`combined_data_1`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
+- [`combined_data_2`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
+- [`combined_data_3`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
+- [`combined_data_4`](https://www.kaggle.com/netflix-inc/netflix-prize-data)
 - [`movie_titles`](./Data/movie_titles.csv)
 
-Besides, to determine similar movies for Movie Clustering, besides `movie_titles`, a separate [Kaggle dataset](https://www.kaggle.com/danielgrijalvas/movies) was utilized that contained additional characteristics for each movie, such as release country, genre, director, etc. It is stored in the [Data](./Data) folder as well:
+Part of the data cannot be found in the [Data](./Data) folder due to the limitation of Github file size.
+
+Besides, to determine similar movies for Movie Clustering, besides `movie_titles`, a separate [Kaggle dataset](https://www.kaggle.com/danielgrijalvas/movies) was utilized that contained additional characteristics for each movie, such as release country, genre, director, etc. It is stored in the [Data](./Data) folder.
 
 - [`movies`](./Data/movies.csv)
 
@@ -37,11 +39,11 @@ The training dataset stored in files starting with `combined_data` contains over
 
 This project was done in Python with three jupyter notebooks.
 
-- [`Data_Analyses`](./Data_Analyses.ipynb)
+- [`Data_Cleaning`](./Data_Cleaning.ipynb)
 - [`Data_Manipulation`](./Data_Manipulation.ipynb)
 - [`Recommendation_Systems`](./Recommendation_Systems.ipynb)
 
-`Data_Analyses` is aimed to do some basic data cleaning and analyses to the training dataset. 
+`Data_Cleaning` is aimed to do some basic data cleaning and analyses to the training dataset. 
 
 `Data_Manipulation` exists because due to the memory limitation of personal computers, some manipulations could not be conducted on such a large dataset. Thus, a subset of the matrix was used for this project. This jupyter notebook implements the process of matrix cutting and saving. Finally, it will save the matrix that contains 4,642 customers and 2,784 movies as [target.csv](./Data/target.csv).
 
