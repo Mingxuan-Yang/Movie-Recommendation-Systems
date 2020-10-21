@@ -29,7 +29,7 @@ The datasets of this project were released by Netflix in 2006. Some of them can 
 
 Part of the data cannot be found in the [Data](./Data) folder due to the limitation of Github file size.
 
-Also, to determine similar movies for Movie Clustering, a separate [Kaggle dataset](https://www.kaggle.com/danielgrijalvas/movies) besides `movie_titles.csv` was utilized that contained additional characteristics for each movie, such as release country, genre, director, etc. It is called `movies.csv` and is saved in the [Data](./Data) folder.
+Also, to determine similar movies for Movie Clustering, a separate Kaggle dataset besides `movie_titles.csv` was utilized that contained additional characteristics for each movie, such as release country, genre, director, etc. It is called `movies.csv` and is saved in the [Data](./Data) folder.
 
 - [`movies.csv`](./Data/movies.csv)
 
