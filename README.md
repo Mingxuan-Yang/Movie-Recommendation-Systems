@@ -35,7 +35,7 @@ Also, to determine similar movies for Movie Clustering, a separate Kaggle datase
 
 The training dataset stored in files starting with 'combined_data' contains over 100 million ratings from over 480,000 randomly-chosen, anonymous subscribers on nearly 18,000 movie titles. This dataset provides 4 key variables: *CustomerID*; *Rating*; *Date*; and *MovieID*.
 
-## Files
+## Coding Files
 
 This project was carried out in Python with three jupyter notebooks.
 
